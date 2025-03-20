@@ -8,28 +8,6 @@
 - :t-rex: February 8th, 2025: Our Challenge Repo. is ready!
 
 
-## About the Challenge
-
-In collaboration with the NTIRE workshop, we are hosting a challenge focused on Efficient Super-Resolution ([NTIRE2025_ESR](https://codalab.lisn.upsaclay.fr/competitions/21620)). This involves the task of enhancing the resolution of an input image by a factor of x4, utilizing a set of pre-existing examples comprising both low-resolution and their corresponding high-resolution images. The challenge encompasses one :trophy: main track which consists of three :gem: sub-tracks, i.e., the Inference Runtime, FLOPs (Floating Point Operations Per Second), and Parameters. The baseline method in NTIRE2025_ESR is [EFDN](https://arxiv.org/pdf/2204.08759) (*Wang Yan, 2023*), the 1st place for the overall performance of NTIRE2023 Efficient Super-Resolution Challenge. Details are shown below:
-
-- :trophy: Main-track: **Overall Performance** (Runtime, Parameters, FLOPs,) the aim is to obtain a network design / solution with the best overall performance in terms of inference runtime, FLOPS, and parameters on a common GPU (i.e., NVIDIA RTX A6000 GPU) while being constrained to maintain or improve the PSNR results.
-
-- :gem: Sub-track 1: **Inference Runtime**, the aim is to obtain a network design / solution with the lowest inference time (runtime) on a common GPU (i.e., NVIDIA RTX A6000 GPU) while being constrained to maintain or improve over the baseline method EFDN in terms of number of parameters, FLOPs, and the PSNR result.
-
-- :gem: Sub-track 2: **FLOPs**, the aim is to obtain a network design / solution with the lowest amount of FLOPs on a common GPU (i.e., NVIDIA RTX A6000 GPU) while being constrained to maintain or improve the inference runtime, the parameters, and the PSNR results of EFDN.
-
-- :gem: Sub-track 3: **Parameters**, the aim is to obtain a network design / solution with the lowest amount of parameters on a common GPU (i.e., NVIDIA RTX A6000 GPU) while being constrained to maintain the FLOPs, the inference time (runtime), and the PSNR result of EFDN.
-
-It's important to highlight that to determine the final ranking and challenge winners, greater weight will be given to teams or participants who demonstrate improvements in more than one aspect (runtime, FLOPs, and parameters) over the provided reference solution.
-
-To ensure fairness in the evaluation process, it is imperative to adhere to the following guidelines:
-- **Avoid Training with Specific Image Sets:**
-    Refrain from training your model using the validation LR images, validation HR images, or testing LR images. The test datasets will not be disclosed, making PSNR performance on the test datasets a crucial factor in the final evaluation.
-
-- **PSNR Threshold and Ranking Eligibility:**
-    Methods with a PSNR below the specified threshold (i.e., 26.90 dB on DIV2K_LSDIR_valid and, 26.99 dB on DIV2K_LSDIR_test) will not be considered for the subsequent ranking process. It is essential to meet the minimum PSNR requirement to be eligible for further evaluation and ranking.
-
-
 ## The Environments
 
 The evaluation environments adopted by us is recorded in the `requirements.txt`. After you built your own basic Python (Python = 3.9 in our setting) setup via either *virtual environment* or *anaconda*, please try to keep similar to it via:
