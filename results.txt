@@ -1,0 +1,2 @@
+Model               	Val PSNR  	Val Time [ms] 	Params [M]	FLOPs [G] 	Acts [M]	Mem [M] 	Conv    
+16_SCMSR            	26.92     	76.07         	0.393     	17.62     	485.62  	662.02  	 249    

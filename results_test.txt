@@ -1,0 +1,2 @@
+Model               	Test Time [ms]	Params [M]	FLOPs [G] 	Acts [M]	Mem [M] 	Conv    
+16_SCMSR            	74.93         	0.393     	17.61     	485.62  	1108.21 	 249    
